@@ -1,0 +1,268 @@
+ :root {
+    box-sizing: border-box;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+} 
+
+html {
+    scroll-behavior: smooth;
+} 
+
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1b2522;
+}
+
+.header {
+    height: 100vh;
+    background-image: url('./media/poster5.jpg');
+    background-size: cover;
+    background-position-x: 52%;
+    background-position-y: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    padding: .5rem 1rem;
+    z-index: 2;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: white;
+}
+
+.nav-list a:hover {
+    color: #ccc;
+}
+
+.title {
+    font-size: 9rem;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 2.1rem;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: pink;
+    border-radius: 100000px;
+    padding: .25em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: #1b2522;
+    
+
+}
+
+.large {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(184, 134, 143);
+}
+
+.scroll-down-icon {
+    position: absolute;
+    bottom: 1rem;
+    width: 40px;
+    margin: 0 auto;
+    margin-right: 6rem
+}
+
+
+
+.section {
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 450px));
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 50px;
+}
+
+.curriculum-component {
+    display: flex;
+    align-items: center;
+}
+
+.curriculum-component p {
+    font-size: 1.1rem;
+}
+
+.curriculum-component img {
+    /* width: 150px; */
+    margin-right: 1rem;
+}
+
+.curriculum-icons {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.pricing {
+    background-color: rgba(214, 147, 159, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.pricing-text {
+    max-width: 400px;
+    font-size: 1.1rem;
+}
+
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form label {
+    color: black;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .74rem;
+    outline: none;
+    border: 2px solid #1b2522;
+    border-radius: .3em;
+    padding: .5em;
+    color: inherit;
+    font-family: inherit;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 75px;
+    max-height: 200px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: rgba(214, 147, 159, 0.76);
+}
+
+.btn-container {
+    text-align: end;
+}
+
+.btn-square {
+    font-weight: normal;
+    border-radius: .3em;
+}
+
+
+.footer {
+    background-color: rgba(15, 15, 15, 0.945);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .4rem 1rem;
+
+}
+
+.footer img {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    color: white;
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        font-size: 6rem;
+    }
+    .sub-title {
+        font-size: 1.7rem;
+    }
+    .large {
+        font-size: 17px;
+    }
+    .curriculum-icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    
+
+    .curriculum-component p {
+        font-size: 1.1rem;
+    }
+  }
